@@ -24,6 +24,12 @@
 		3779627927D4B3540011A700 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3779627727D4B3540011A700 /* LaunchScreen.storyboard */; };
 		3779628327D4B8C50011A700 /* GGWeatherMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779628227D4B8C50011A700 /* GGWeatherMainViewController.swift */; };
 		37F4EA8127D703540072777D /* UIAlertController+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4EA8027D703540072777D /* UIAlertController+Convenience.swift */; };
+		37F4EA8627D70B560072777D /* GGWeatherNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4EA8527D70B560072777D /* GGWeatherNavigation.swift */; };
+		37F4EA8827D7151E0072777D /* UIWindow+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4EA8727D7151E0072777D /* UIWindow+Key.swift */; };
+		37F4EA8A27D71B270072777D /* GGWeatherDetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4EA8927D71B270072777D /* GGWeatherDetailTableView.swift */; };
+		37F4EA8D27D727AE0072777D /* GGWeatherDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4EA8B27D727AE0072777D /* GGWeatherDetailCell.swift */; };
+		37F4EA8E27D727AE0072777D /* GGWeatherDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37F4EA8C27D727AE0072777D /* GGWeatherDetailCell.xib */; };
+		37F4EA9027D7280E0072777D /* Date+Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4EA8F27D7280E0072777D /* Date+Print.swift */; };
 		CA455A696C01BD0664C3AC16 /* Pods_GoatWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40B553E82095C6F130F5C97 /* Pods_GoatWeatherApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +54,12 @@
 		3779628027D4B3A30011A700 /* GoatWeatherApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoatWeatherApp.entitlements; sourceTree = "<group>"; };
 		3779628227D4B8C50011A700 /* GGWeatherMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGWeatherMainViewController.swift; sourceTree = "<group>"; };
 		37F4EA8027D703540072777D /* UIAlertController+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Convenience.swift"; sourceTree = "<group>"; };
+		37F4EA8527D70B560072777D /* GGWeatherNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGWeatherNavigation.swift; sourceTree = "<group>"; };
+		37F4EA8727D7151E0072777D /* UIWindow+Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Key.swift"; sourceTree = "<group>"; };
+		37F4EA8927D71B270072777D /* GGWeatherDetailTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGWeatherDetailTableView.swift; sourceTree = "<group>"; };
+		37F4EA8B27D727AE0072777D /* GGWeatherDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGWeatherDetailCell.swift; sourceTree = "<group>"; };
+		37F4EA8C27D727AE0072777D /* GGWeatherDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GGWeatherDetailCell.xib; sourceTree = "<group>"; };
+		37F4EA8F27D7280E0072777D /* Date+Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Print.swift"; sourceTree = "<group>"; };
 		ABB0093C3B8A268277431525 /* Pods-GoatWeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoatWeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-GoatWeatherApp/Pods-GoatWeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		EEC36D027A0638CA98F5F23F /* Pods-GoatWeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoatWeatherApp.release.xcconfig"; path = "Target Support Files/Pods-GoatWeatherApp/Pods-GoatWeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		F40B553E82095C6F130F5C97 /* Pods_GoatWeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoatWeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,10 +106,13 @@
 			isa = PBXGroup;
 			children = (
 				375D92A127D6DA8900F0C186 /* GGWeatherTableView.swift */,
+				37F4EA8927D71B270072777D /* GGWeatherDetailTableView.swift */,
 				3711EF1A27D5B2DB00CD8F86 /* GGWeatherHeaderCell.swift */,
 				3711EF1B27D5B2DB00CD8F86 /* GGWeatherHeaderCell.xib */,
 				3711EF2027D5FD7F00CD8F86 /* GGWeatherDayCell.swift */,
 				3711EF2127D5FD7F00CD8F86 /* GGWeatherDayCell.xib */,
+				37F4EA8B27D727AE0072777D /* GGWeatherDetailCell.swift */,
+				37F4EA8C27D727AE0072777D /* GGWeatherDetailCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -106,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				37F4EA8027D703540072777D /* UIAlertController+Convenience.swift */,
+				37F4EA8727D7151E0072777D /* UIWindow+Key.swift */,
+				37F4EA8F27D7280E0072777D /* Date+Print.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -146,6 +163,7 @@
 				3711EF0927D4EF8500CD8F86 /* Model */,
 				375D92A327D6DAF900F0C186 /* ViewModel */,
 				3711EF0D27D4F0D300CD8F86 /* Repositories */,
+				37F4EA8427D70AF10072777D /* Function */,
 				3779628027D4B3A30011A700 /* GoatWeatherApp.entitlements */,
 				3779626C27D4B3510011A700 /* AppDelegate.swift */,
 				3779626E27D4B3510011A700 /* SceneDelegate.swift */,
@@ -163,6 +181,14 @@
 				375D92A627D6F53800F0C186 /* GGWeatherDetailViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		37F4EA8427D70AF10072777D /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				37F4EA8527D70B560072777D /* GGWeatherNavigation.swift */,
+			);
+			path = Function;
 			sourceTree = "<group>";
 		};
 		6701A87448CC4770F4D237B5 /* Frameworks */ = {
@@ -244,6 +270,7 @@
 			files = (
 				3779627927D4B3540011A700 /* LaunchScreen.storyboard in Resources */,
 				3711EF2327D5FD7F00CD8F86 /* GGWeatherDayCell.xib in Resources */,
+				37F4EA8E27D727AE0072777D /* GGWeatherDetailCell.xib in Resources */,
 				3779627627D4B3540011A700 /* Assets.xcassets in Resources */,
 				3711EF1D27D5B2DB00CD8F86 /* GGWeatherHeaderCell.xib in Resources */,
 			);
@@ -308,7 +335,12 @@
 				3711EF2227D5FD7F00CD8F86 /* GGWeatherDayCell.swift in Sources */,
 				3779628327D4B8C50011A700 /* GGWeatherMainViewController.swift in Sources */,
 				3779626F27D4B3510011A700 /* SceneDelegate.swift in Sources */,
+				37F4EA8627D70B560072777D /* GGWeatherNavigation.swift in Sources */,
+				37F4EA8827D7151E0072777D /* UIWindow+Key.swift in Sources */,
+				37F4EA8D27D727AE0072777D /* GGWeatherDetailCell.swift in Sources */,
 				3711EF1627D4F99000CD8F86 /* GGWeatherRemoteNetworkManager.swift in Sources */,
+				37F4EA8A27D71B270072777D /* GGWeatherDetailTableView.swift in Sources */,
+				37F4EA9027D7280E0072777D /* Date+Print.swift in Sources */,
 				375D92A527D6DB1D00F0C186 /* GGWeatherTableViewModel.swift in Sources */,
 				3711EF1227D4F28E00CD8F86 /* GGWeatherOneCallModel.swift in Sources */,
 			);

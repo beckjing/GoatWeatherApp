@@ -30,6 +30,7 @@ class GGWeatherTableView: UIView {
     public init(frame: CGRect = .zero, viewModel: GGWeatherTableViewModel) {
         self.viewModel = viewModel
         super.init(frame: frame)
+        self.backgroundColor = UIColor.systemBackground
         addSubview(tableView)
         tableView.snp.makeConstraints { make in
             make.edges.equalTo(self.safeAreaLayoutGuide)
@@ -126,8 +127,8 @@ extension GGWeatherTableView: UITableViewDataSource {
                     dayCell.tempRangeLabel.text = "\(String(format: "%.1f", dayModel.temp!.min!))º~\(String(format: "%.1f", dayModel.temp!.max!))º"
                     dayCell.weatherImage.sd_setImage(with: URL(string: dayModel.weather!.first!.iconUrl()), completed: nil)
                     let date = Date.init(timeIntervalSince1970: TimeInterval.init(dayModel.dt!))
-                    dayCell.dayLabel.text = viewModel.weekday(timeZone: viewModel.onCallModel?.timezone, date: date)
-                    dayCell.dateLabel.text = viewModel.dateString(timeZone: viewModel.onCallModel?.timezone, date: date)
+                    dayCell.dayLabel.text = Date.weekday(timeZone: viewModel.onCallModel?.timezone, date: date)
+                    dayCell.dateLabel.text = Date.dateString(timeZone: viewModel.onCallModel?.timezone, date: date)
                 }
                 return dayCell
             default:

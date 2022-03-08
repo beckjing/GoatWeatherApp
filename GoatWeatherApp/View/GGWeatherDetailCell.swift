@@ -1,18 +1,18 @@
 //
-//  GGWeatherHeaderCell.swift
+//  GGWeatherDetailCell.swift
 //  GoatWeatherApp
 //
-//  Created by 景悦诚 on 2022/3/7.
+//  Created by 景悦诚 on 2022/3/8.
 //
 
 import UIKit
 
-class GGWeatherHeaderCell: UITableViewCell {
-    
-    
-    @IBOutlet weak var cityLabel: UILabel!
-    @IBOutlet weak var tempLabel: UILabel!
-    @IBOutlet weak var weatherInfoLabel: UILabel!
+class GGWeatherDetailCell: UITableViewCell {
+
+    @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var weatherImage: UIImageView!
+    @IBOutlet weak var descLabel: UILabel!
+    @IBOutlet weak var tempRangeLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
