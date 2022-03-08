@@ -1,0 +1,26 @@
+PODS:
+  - FLEX (4.6.1)
+  - SDWebImage (5.12.3):
+    - SDWebImage/Core (= 5.12.3)
+  - SDWebImage/Core (5.12.3)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - FLEX
+  - SDWebImage
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - FLEX
+    - SDWebImage
+    - SnapKit
+
+SPEC CHECKSUMS:
+  FLEX: bbc55d197f87d7cde2454c3981aa47069b694144
+  SDWebImage: 53179a2dba77246efa8a9b85f5c5b21f8f43e38f
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 9e6600b63ca0f6c76673064dc73e2b7c54b473d7
+
+COCOAPODS: 1.11.2
